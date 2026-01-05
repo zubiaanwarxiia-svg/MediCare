@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare General Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MediCare.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>" type="image/x-icon">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-hospital logo-icon"></i>
+                <div class="logo-text">Medi<span>Care</span></div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#doctors" class="nav-link">Doctors</a></li>
+                    <li><a href="#appointment" class="nav-link">Appointment</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#emergency-contact" class="btn btn-primary emergency-btn">Emergency: (123) 456-7890</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Advanced Healthcare with Compassion</h1>
+            <p>At MediCare General Hospital, we provide world-class medical treatment with state-of-the-art technology and a patient-centered approach. Our team of specialists is available 24/7 to ensure your health and wellbeing.</p>
+            <a href="#appointment" class="btn">Book an Appointment</a>
+            <a href="#emergency-contact" class="btn btn-primary">Emergency Contact</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Medical Services</h2>
+                <p>We offer comprehensive healthcare services across all major medical specialties with the latest technology and expert medical professionals.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cardiology</h3>
+                        <p>Advanced heart care with cutting-edge diagnostic tools and treatment options including cardiac surgery and rehabilitation.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Neurology</h3>
+                        <p>Comprehensive neurological care for disorders of the brain, spine, and nervous system with advanced imaging technology.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Pediatrics</h3>
+                        <p>Specialized care for children from infancy through adolescence with a child-friendly environment and expert pediatricians.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Radiology</h3>
+                        <p>Advanced imaging services including MRI, CT scan, X-ray, and ultrasound with rapid results and expert interpretation.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>General Surgery</h3>
+                        <p>Comprehensive surgical services using minimally invasive techniques for faster recovery and better outcomes.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Emergency Care</h3>
+                        <p>24/7 emergency services with a dedicated trauma center and rapid response teams for critical care situations.</p>
+                        <a href="#" class="btn" style="margin-top: 15px;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="section" id="doctors">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Specialists</h2>
+                <p>Our team of board-certified physicians and specialists are leaders in their fields, dedicated to providing exceptional patient care.</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card" data-doctor="1">
+                    <div class="doctor-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">Chief of Cardiology</p>
+                        <p>With over 15 years of experience in cardiovascular diseases and interventional cardiology.</p>
+                        <div class="doctor-contact">
+                            <p><i class="fas fa-envelope"></i> sjohnson@medicare.com</p>
+                            <button class="btn view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-doctor="2">
+                    <div class="doctor-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="specialty">Neurology Department Head</p>
+                        <p>Specializes in stroke treatment, epilepsy, and movement disorders with advanced fellowship training.</p>
+                        <div class="doctor-contact">
+                            <p><i class="fas fa-envelope"></i> mchen@medicare.com</p>
+                            <button class="btn view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-doctor="3">
+                    <div class="doctor-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emma Williams</h3>
+                        <p class="specialty">Pediatric Specialist</p>
+                        <p>Dedicated to children's health with expertise in developmental pediatrics and adolescent medicine.</p>
+                        <div class="doctor-contact">
+                            <p><i class="fas fa-envelope"></i> ewilliams@medicare.com</p>
+                            <button class="btn view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctor-card" data-doctor="4">
+                    <div class="doctor-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Garcia</h3>
+                        <p class="specialty">General Surgeon</p>
+                        <p>Expert in minimally invasive surgical techniques with focus on gastrointestinal and laparoscopic surgery.</p>
+                        <div class="doctor-contact">
+                            <p><i class="fas fa-envelope"></i> rgarcia@medicare.com</p>
+                            <button class="btn view-profile-btn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="section appointment-section" id="appointment">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-form">
+                    <h2>Book an Appointment</h2>
+                    <p class="form-subtitle">Fill out the form below to schedule your appointment</p>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="department">Select Department *</label>
+                            <select id="department" class="form-control" required>
+                                <option value="">Choose a department</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="radiology">Radiology</option>
+                                <option value="surgery">General Surgery</option>
+                                <option value="emergency">Emergency Care</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Notes</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Any specific concerns or requirements"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Book Appointment</button>
+                    </form>
+                </div>
+                
+                <div class="appointment-info">
+                    <h2>Contact Information</h2>
+                    <p>We're here to help you with all your healthcare needs. Reach out to us through any of the following channels.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>123 Medical Center Drive, Health City, HC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>Appointments: (123) 456-7890</p>
+                                <p>Emergency: (123) 456-7891</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>info@medicarehospital.com</p>
+                                <p>emergency@medicarehospital.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 8:00 PM</p>
+                                <p>Sat-Sun: 9:00 AM - 6:00 PM</p>
+                                <p>Emergency: 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact Section -->
+    <section class="section emergency-contact-section" id="emergency-contact">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-ambulance"></i> Emergency Contact</h2>
+                <p>Immediate assistance available 24/7. In case of emergency, use any of the following contact methods.</p>
+            </div>
+            
+            <div class="emergency-contact-container">
+                <div class="emergency-info-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h3>Emergency Phone</h3>
+                        <p class="emergency-number">(123) 456-7890</p>
+                        <p class="emergency-note">Available 24 hours, 7 days a week</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-info-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h3>Ambulance Service</h3>
+                        <p class="emergency-number">(123) 456-7891</p>
+                        <p class="emergency-note">Direct line for ambulance dispatch</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-info-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h3>Emergency Email</h3>
+                        <p class="emergency-email">emergency@medicarehospital.com</p>
+                        <p class="emergency-note">Monitor 24/7 by our emergency team</p>
+                    </div>
+                </div>
+                
+                <div class="emergency-info-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="emergency-content">
+                        <h3>Emergency Department Location</h3>
+                        <p>Building A, Ground Floor, East Wing</p>
+                        <p class="emergency-note">Open 24/7 with dedicated entrance</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="emergency-instructions">
+                <h3><i class="fas fa-exclamation-triangle"></i> In Case of Emergency:</h3>
+                <div class="instructions-container">
+                    <div class="instruction-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Call the emergency number immediately</h4>
+                            <p>Dial (123) 456-7890 for immediate assistance</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>State your location clearly</h4>
+                            <p>Provide your exact address or location details</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Describe the nature of the emergency</h4>
+                            <p>Explain symptoms, injuries, or the emergency situation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Follow instructions given by the operator</h4>
+                            <p>Stay on the line and follow all guidance provided</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>If possible, send someone to guide the ambulance</h4>
+                            <p>Have someone wait outside to direct emergency services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="logo" style="margin-bottom: 20px;">
+                        <i class="fas fa-hospital logo-icon"></i>
+                        <div class="logo-text" style="color: white;">Medi<span style="color: #4dabf7;">Care</span></div>
+                    </div>
+                    <p>MediCare General Hospital is committed to providing exceptional healthcare services with compassion, innovation, and excellence.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#appointment">Appointment</a></li>
+                        <li><a href="#emergency-contact">Emergency Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Pediatrics</a></li>
+                        <li><a href="#">Radiology</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive, Health City</p>
+                        <p><i class="fas fa-phone-alt"></i> Appointments: (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@medicarehospital.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediCare General Hospital. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="hospital.js"></script>
+</body>
+</html>
